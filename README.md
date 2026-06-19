@@ -15,11 +15,11 @@ La ruta se representará gráficamente en Turtle durante la expedición para fac
  
 ## Controles generales
 
-1.Moverse hacia adelante
-2.Cambiar ángulo (para cambiar la dirección de avanze de nuestro personaje)
-3.Descansar
-4.Mostrar inventario
-5.Mostrar zonas del inframundo
+1. Moverse hacia adelante
+2. Cambiar ángulo (para cambiar la dirección de avanze de nuestro personaje)
+3. Descansar
+4. Mostrar inventario
+5. Mostrar zonas del inframundo
 
 ## Controles de combate
 
