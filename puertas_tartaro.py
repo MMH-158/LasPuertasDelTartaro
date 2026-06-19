@@ -83,9 +83,7 @@ dificultades = {
 
 import turtle
 import random
-from random import random
 import copy
-from copy import deepcopy
 
 # DEFINICION DE FUNCIONES
 
