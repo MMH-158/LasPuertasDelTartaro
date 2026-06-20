@@ -400,7 +400,7 @@ def turno(j,jx,jy): # main loop turno
         act_jug(ox,oy,jx,jy)
     elif ac2==2:
         print('Acción elegida: Cambiar angulo')
-        ea=input('Que angulo quieres 0/90/180/270 (der, arr, isq, abj): ')
+        ea=input('Que angulo quieres 0/90/180/270 (der, arr, izq, abj): ')
         if ea.isdigit() and int(ea) in[0,90,180,270]:
             if int(ea)!=j.ang: # no mismo angulo
                 j.ang=int(ea)
