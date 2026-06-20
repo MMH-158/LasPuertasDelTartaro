@@ -296,6 +296,7 @@ def genem(x,y,j):
 
 def EvB(j): # evento bueno -- posibilidad ampliación futura
     ev=random.randint(1,4)
+    print("Evento aleatorio")
     part['e_bueno']+=1
     if ev==1:
         j.stam+=15
@@ -323,6 +324,7 @@ def EvB(j): # evento bueno -- posibilidad ampliación futura
 
 def EvM(j,jx,jy): # evento malo -- más eventos en futuras versiones
     ev2=random.randint(1,4)
+    print("Evento aleatorio")
     part['e_malo']+=1
     if ev2==1:
         j.stam-=15
@@ -398,11 +400,12 @@ def turno(j,jx,jy): # main loop turno
         act_jug(ox,oy,jx,jy)
     elif ac2==2:
         print('Acción elegida: Cambiar angulo')
-        ea=input('Que angulo quieres 0/90/180/270: ')
+        ea=input('Que angulo quieres 0/90/180/270 (der, arr, isq, abj): ')
         if ea.isdigit() and int(ea) in[0,90,180,270]:
             if int(ea)!=j.ang: # no mismo angulo
                 j.ang=int(ea)
                 camb_ang(j.ang)
+                pant.update()
             else: print('Ya apuntas ahí')
         else: print('Angulo no válido')
     elif ac2==3:
